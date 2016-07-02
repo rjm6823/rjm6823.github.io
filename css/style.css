@@ -1,0 +1,104 @@
+html {
+  font-size: 62.5%;
+}
+body{
+	font-size: 1.6rem;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../images/bgMain.png");
+	color: #999999;
+	line-height: 1.6;
+}
+button{
+  display: inline-block;
+  height: 48px;
+  padding: 5px 30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+button:hover, button:focus {
+  color: #ffffff;
+  border-color: #222;
+  background-color: #111;
+  outline: 0; 
+   transition:.7s;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #ffffff !important;
+}
+hr{
+	border-top: 1px solid #999999;
+	margin-bottom: 5rem;
+	margin-top:5rem;
+}
+.anchor{
+	text-decoration: none !important;
+}
+.container {
+  position: relative;
+  width: 80%;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.introSection {
+    min-height: 100vh;
+	background-image: url("../images/bgHeader.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #999999;
+	display: flex;
+	align-items: center;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.navbar-custom a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.navbar-custom a:hover{
+	background-color: #666666 !important;
+}
+.navbar-custom a:focus{
+	background-color: transparent !important;
+}
+.sectionMain{
+	padding-left: 1.5rem;
+}
+.jumbotronHeading{
+	margin-left: 40%;
+	text-align: center;
+}
+.contactIcon{
+	padding-right: 0.5rem;
+	color: #ffffff;
+}
+.iconBorder{
+	background: none repeat scroll 0 0 transparent;
+	border: 2px solid #999999;
+	border-radius: 100%;
+	color: #999999;
+	margin: 0 auto;
+	padding: 35px;
+	text-align: center;
+	width: 140px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.footer{
+	margin-top: 10rem;
+}
