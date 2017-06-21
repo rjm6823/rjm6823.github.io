@@ -62,7 +62,7 @@ hr {
 
 .introSection {
     min-height: 100vh;
-    background: url("../images/bgHeader.jpg") no-repeat;
+    background: url("../images/bgHeaderSmall.jpg") no-repeat;
     background-size: cover;
     border-bottom: 1px solid #999999;
     display: flex;
