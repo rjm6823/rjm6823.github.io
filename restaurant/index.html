@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Restaurant</title>
+    <meta name="description" content="A simple AngularJS powered restaurant website styled with Bootstrap.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Antic+Didone" rel="stylesheet">
+</head>
+<body ng-app="myApp">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#nav-header" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#!/home">Restaurant</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-header">
+            <ul class="nav navbar-nav">
+                <li><a href="#!/about">About</a></li>
+                <li><a href="#!/contact">Contact</a></li>
+                <li><a href="#!/menu">Menu</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+<div class="footer navbar-fixed-bottom">
+    <div class="container">
+        <table class="custom-table">
+            <thead>
+            <tr>
+                <th><h2>Important Information</h2></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tel: 123-456-7890</td>
+                <td>Hours of Operation: 8:00am - 9:00pm</td>
+            </tr>
+            <tr>
+                <td>Address: 123 Fake Address</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
+<script src="about/about.js"></script>
+<script src="contact/contact.js"></script>
+<script src="home/home.js"></script>
+<script src="menu/menu.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

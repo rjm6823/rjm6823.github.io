@@ -1,0 +1,28 @@
+{
+  "lunchArray": [
+    {
+      "name": "BLT",
+      "cost": "$1.00",
+      "cal": 100,
+      "img": "images/placeholderSmall.jpeg"
+    },
+    {
+      "name": "Sandwich",
+      "cost": "$1.50",
+      "cal": 200,
+      "img": "images/placeholderSmall.jpeg"
+    },
+    {
+      "name": "Hero",
+      "cost": "$0.75",
+      "cal": 300,
+      "img": "images/placeholderSmall.jpeg"
+    },
+    {
+      "name": "Submarine",
+      "cost": "$2.00",
+      "cal": 255,
+      "img": "images/placeholderSmall.jpeg"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row text-center">
+        <h1>{{type}}</h1>
+        <p>{{description}}</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#menu-header" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu-header">
+            <ul class="nav navbar-nav">
+                <li ng-click="allShow()"><a class="fakeButton">All</a></li>
+                <li ng-click="breakfastShow()"><a class="fakeButton">Breakfast</a></li>
+                <li ng-click="lunchShow()"><a class="fakeButton">Lunch</a></li>
+                <li ng-click="dinnerShow()"><a class="fakeButton">Dinner</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div ng-show="breakfastFlag" class="row">
+        <h1>Breakfast</h1>
+        <div ng-repeat="meal in breakfast" class="col-sm-4">
+            <div class="thumbnail">
+                <img src={{meal.img}}>
+                <div class="caption">
+                    <h3>{{meal.name}}</h3>
+                    <p>{{meal.cost}}</p>
+                    <p>{{meal.cal}} cal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="lunchFlag" class="row">
+        <h1>Lunch</h1>
+        <div ng-repeat="meal in lunch" class="col-sm-4">
+            <div class="thumbnail">
+                <img src={{meal.img}}>
+                <div class="caption">
+                    <h3>{{meal.name}}</h3>
+                    <p>{{meal.cost}}</p>
+                    <p>{{meal.cal}} cal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-show="dinnerFlag" class="row">
+        <h1>Dinner</h1>
+        <div ng-repeat="meal in dinner" class="col-sm-4">
+            <div class="thumbnail">
+                <img src={{meal.img}}>
+                <div class="caption">
+                    <h3>{{meal.name}}</h3>
+                    <p>{{meal.cost}}</p>
+                    <p>{{meal.cal}} cal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="button" class="goToTop hidden-xs hidden-sm" value="Top"/>
