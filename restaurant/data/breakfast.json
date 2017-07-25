@@ -4,25 +4,29 @@
       "name": "Breakfast Sandwich",
       "cost": "$1.00",
       "cal": 100,
-      "img": "images/breakfastSandwich.jpg"
+      "img": "images/breakfastSandwich.jpg",
+      "special": true
     },
     {
       "name": "Eggs, Toast & Beans",
       "cost": "$1.50",
       "cal": 200,
-      "img": "images/eggsToastBeans.jpg"
+      "img": "images/eggsToastBeans.jpg",
+      "special": false
     },
     {
       "name": "Pancakes",
       "cost": "$0.75",
       "cal": 300,
-      "img": "images/pancakes.jpg"
+      "img": "images/pancakes.jpg",
+      "special": false
     },
     {
       "name": "Waffles",
       "cost": "$2.00",
       "cal": 255,
-      "img": "images/waffles.jpg"
+      "img": "images/waffles.jpg",
+      "special": false
     }
   ]
 }

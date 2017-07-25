@@ -1,60 +1,65 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-8 thumbnail">
-            <img src="images/panSmall.jpeg">
-        </div>
-        <div class="col-sm-4">
-            <p>One of the house favourites, potatoes and beans seared in a light oil</p>
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <div uib-slide ng-repeat="event in events" index="event.id">
+            <img ng-src="{{event.img}}" style="margin:auto;">
+            <div class="carousel-caption">
+                <h2 class="outline">{{event.name}}</h2>
+                <p class="outline" style="font-size: 2.5rem">{{event.desc}}</p>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4">
-            <div class="thumbnail"><img src="images/placeholderSmall.jpeg">
-                <div class="caption">
-                    <h3>Meal Name</h3>
-                    <p>Meal description</p>
-                </div>
-            </div>
+        <div class="col-sm-12">
+            <h1>Specials</h1>
         </div>
-        <div class="col-sm-4">
-            <div class="thumbnail"><img src="images/placeholderSmall.jpeg">
-                <div class="caption">
-                    <h3>Meal Name</h3>
-                    <p>Meal description</p>
-                </div>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Breakfast</h2>
         </div>
-        <div class="col-sm-4">
-            <div class="thumbnail"><img src="images/placeholderSmall.jpeg">
-                <div class="caption">
-                    <h3>Meal Name</h3>
-                    <p>Meal description</p>
+        <div ng-repeat="meal in breakfast">
+            <div class="col-sm-4" ng-if="meal.special">
+                <div class="thumbnail">
+                    <img ng-src={{meal.img}} class="img-responsive">
+                    <div class="caption">
+                        <h3>{{meal.name}}</h3>
+                        <p>{{meal.cost}}</p>
+                        <p>{{meal.cal}} cal</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4">
-            <div class="thumbnail"><img src="images/placeholderSmall.jpeg">
-                <div class="caption">
-                    <h3>Meal Name</h3>
-                    <p>Meal description</p>
+        <div class="col-sm-12">
+            <h2>Lunch</h2>
+        </div>
+        <div ng-repeat="meal in lunch">
+            <div class="col-sm-4" ng-if="meal.special">
+                <div class="thumbnail">
+                    <img ng-src={{meal.img}} class="img-responsive">
+                    <div class="caption">
+                        <h3>{{meal.name}}</h3>
+                        <p>{{meal.cost}}</p>
+                        <p>{{meal.cal}} cal</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="thumbnail"><img src="images/placeholderSmall.jpeg">
-                <div class="caption">
-                    <h3>Meal Name</h3>
-                    <p>Meal description</p>
-                </div>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Dinner</h2>
         </div>
-        <div class="col-sm-4">
-            <div class="thumbnail"><img src="images/placeholderSmall.jpeg">
-                <div class="caption">
-                    <h3>Meal Name</h3>
-                    <p>Meal description</p>
+        <div ng-repeat="meal in dinner">
+            <div class="col-sm-4" ng-if="meal.special">
+                <div class="thumbnail">
+                    <img ng-src={{meal.img}} class="img-responsive">
+                    <div class="caption">
+                        <h3>{{meal.name}}</h3>
+                        <p>{{meal.cost}}</p>
+                        <p>{{meal.cal}} cal</p>
+                    </div>
                 </div>
             </div>
         </div>
