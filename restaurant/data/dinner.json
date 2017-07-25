@@ -4,25 +4,25 @@
       "name": "Steak",
       "cost": "$1.00",
       "cal": 100,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/steak.jpg"
+    },
+    {
+      "name": "Pizza",
+      "cost": "$1.50",
+      "cal": 200,
+      "img": "images/pizza.jpg"
     },
     {
       "name": "Fish",
-      "cost": "$1.50",
-      "cal": 200,
-      "img": "images/placeholderSmall.jpeg"
-    },
-    {
-      "name": "Vegetable",
       "cost": "$0.75",
       "cal": 300,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/fish.jpg"
     },
     {
       "name": "Hamburger",
       "cost": "$2.00",
       "cal": 255,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/burger.jpg"
     }
   ]
 }

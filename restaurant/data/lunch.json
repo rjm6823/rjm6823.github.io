@@ -1,28 +1,28 @@
 {
   "lunchArray": [
     {
-      "name": "BLT",
+      "name": "Sandwich",
       "cost": "$1.00",
       "cal": 100,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/sandwich.jpg"
     },
     {
-      "name": "Sandwich",
+      "name": "Panini",
       "cost": "$1.50",
       "cal": 200,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/panini.jpg"
     },
     {
-      "name": "Hero",
+      "name": "Pita",
       "cost": "$0.75",
       "cal": 300,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/pita.jpg"
     },
     {
-      "name": "Submarine",
+      "name": "Salad",
       "cost": "$2.00",
       "cal": 255,
-      "img": "images/placeholderSmall.jpeg"
+      "img": "images/salad.jpg"
     }
   ]
 }

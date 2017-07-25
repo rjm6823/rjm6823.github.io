@@ -17,6 +17,8 @@ body {
     background-color: #f8f8f8;
     border-color: #e7e7e7;
     border-width: 0 0 1px;
+    opacity: 0.75;
+    transition: 1s;
 }
 
 .fakeButton:hover {
